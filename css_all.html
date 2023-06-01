@@ -6,62 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /*Text文字*/
-           /*顏色*/
-           .text_color{
-                /*color:red;
+        /* Text文字 */
+            /* 顏色 */
+            .text_color{
+                /* color: red;
                 color: #00ff00; */
-                color: rgb(0,0,255);
+                color:rgb(0, 0, 255);
             }
-            /*對齊*/
+            /* 對齊 */
             .text_align{
                 text-align: center;
             }
-            /*行高*/
+            /* 行高 */
             .text_line_height{
                 line-height: 50px;
             }
-            /*文字線段*/
+            /* 文字段落 */
             .text_decoration{
-                /*text-decoration: none; */
-                /*text-decoration: underline; */
-                /*text-decoration: overline; */
+                /* text_decoration: none; */
+                /* text_decoration: underline; */
+                /* text_decoration: overline; */
                 text-decoration: line-through;
             }
-            /*文字縮排*/
-            .text_lident{
+            /* 文字縮排 */
+            .text_indent{
                 text-indent: 50px;
             }
-            /*字距*/
+            /* 字距 */
             .text_spacing{
                 letter-spacing: 10px;
             }
-            /*字體樣式*/
+            /* 字體樣式 */
             .font_style{
-                /*fone-style: normal;*/
-                /*斜體*/
+                /* font-style: normal; */
+                /* 斜體 */
                 font-style: italic;
             }
-            /*字體粗細*/
+            /* 字體粗細 */
             .font_weight{
-                font-weight:  bold;
+                font-weight: bold;
             }
-            /*字體大小*/
+            /* 字體大小 */
             .font_size{
                 font-size: 20px;
             }
-            /*字型*/
+            /* 字型 */
             .font_family{
                 font-family: "標楷體";
             }
+            /* Link連結 */
+            /* 未訪問 */
+            .a_css:link{
+                color:red;
+            }
+            /* 訪問過 */
+            .a_css:visited{
+                color: green;
+            } 
+            /* 移入 */
+            .a_css:hover{
+                color:yellow
+            }
+            /* 點下去 */
+            .a_css:active{
+                color: blueviolet;
+            }
+            /* List列表 */
+            .ol_list{
+                /* 類型 */
+                /* list-style-type: none; */
+                list-style-type: upper-roman;
+                /* 位置 */
+                list-style-position: inside;
+                /* 圖片 */
+                list-style-image: url('school.png');
+            }
+            /* Table表格 */
+                /* 邊框合併 */
+                .table_css{
+                    border-collapse: collapse;
+                }
+                td{
+                    /* 水平 */
+                    text-align: center;
+                    /* 垂直 */
+                    vertical-align: center;
+                }
+                /* 偶數行 */
+                tr:nth-child(even){
+                    color: red;
+                }
+                /* 奇數行 */
+                tr:nth-child(odd){
+                    color: blue;
+                }
     </style>
 </head>
 <body>
-    <div class="text_color text_align text_line_height text_decoration text_lident text_spacing">
-        字體css
+    <div class="text_color text_align text_line_height text_decoration text_indent text_spacing">
+        字體CSS
     </div>
-    <div class="font_style font_weight font-family">
+    <div class="font_style font_weight font_size font_family">
         Font字型
     </div>
+    <div>
+        <a href="#" class="a_css">Link連結</a>
+        <a href="abc" class="a_css">Link連結2</a>
+        <a href="def" class="a_css">Link連結3</a>
+    </div>
+        <ol class="ol_list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+    </dvi>
+    <table class="table_css" border="1" cellpadding="0" cellspacing="0" width="300" height="300">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
 </body>
 </html>
